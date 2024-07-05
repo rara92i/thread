@@ -46,17 +46,17 @@ const useAuth = () => {
     return () => unsubscribe();
   }, []);
 
-  // Fonction pour rediriger si l'utilisateur est authentifié
+
   const redirectIfAuthenticated = () => {
     if (user) {
-      router.push('/dashboard'); // Redirige vers le tableau de bord si l'utilisateur est authentifié
+      router.push('/dashboard'); 
     }
   };
 
-  // Retourne l'état de l'utilisateur, le statut de chargement et les fonctions d'authentification
+
   return { user, isFetch, redirectIfAuthenticated, loginWithGoogle, loginWithGithub };
 };
 
-// Exporte le hook d'authentification personnalisé
+
 export default useAuth;
 
