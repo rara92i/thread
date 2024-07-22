@@ -3,14 +3,6 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage"; 
 import {getAuth} from 'firebase/auth'
 
-// const firebaseConfig = {
-//   apiKey: "AIzaSyBgLOGJ2lB46UyrjlSYpp0XMRPQRjNZmSE",
-//   authDomain: "thread-d2124.firebaseapp.com",
-//   projectId: "thread-d2124",
-//   storageBucket: "thread-d2124.appspot.com",
-//   messagingSenderId: "875458394025",
-//   appId: "1:875458394025:web:d5182461ec1c5fcd5eb6b8"
-// };
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
